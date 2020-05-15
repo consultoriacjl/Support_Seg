@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="data:image/png;base64,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">
+  <title>Templeate CJL</title>
+  <meta name="description" content="Templeate Support">
+  <meta name="keywords" content="Support">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="neon.css" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- Cover -->
+  <div class="align-items-center d-flex py-5 cover section-fade-in-out" style="background-image: url(https://lh3.googleusercontent.com/-EIK9MELhLuiJG26Erq_pwCMZt_dy9vO9E8Lsh1X1KlWnupiqJ4unHmm2WVkIf4p7D3HXZ4T01ZAnkWHLA=w1080-h608-p-no-v0);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 align-self-center text-lg-left text-center">
+          <h3 class="display-3 shadow-lg">Support Seguros</h3>
+        </div>
+        <div class="col-lg-5 p-3">
+          <form class="p-4 shadow-lg" method="post" action="https://formspree.io/">
+            <h4 class="mb-4 text-center">Solicite uma Cotação</h4>
+            <div class="form-group"> <label>Nome</label>
+              <input type="text" class="form-control" placeholder="Nome" required="required">
+              <div class="form-group"><label>Email</label><input type="email" class="form-control" placeholder="exemplo@exemplo.com" required="required">
+                <div class="form-group"><label>Telefone</label><input type="number" class="form-control" placeholder="(99) 99999-9999" required="required">
+                  <div class="form-group"><label>Serviço</label><input type="number" class="form-control" placeholder="Opções" required="required">
+                    <div class="form-group"><label>Mensagem</label><input type="text" class="form-control" placeholder="Mensagem"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn mt-4 btn-block p-2 shadowed btn-danger">Enviar Cotação</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-4">Quem Somos</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 p-4">
+          <h4>"A Support Corretora de Seguros atua na gestão de seguros em geral, tendo como foco e objetivo proporcionar aos clientes tranquilidade e segurança com o melhor custo benefício. Atendimento ético, ágil e personalizado direto com nossos consultores. Afinal, sua proteção é muito importante para ser feita por robôs."</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-light pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-15 col-sm-15 col-15 col-lg-15">
+          <div class="carousel slide" data-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item"> <a href=""><img class="d-block w-100" src="http://supportseguros.com.br/wp-content/uploads/2017/03/bg_seguro_empresarial02.jpg"></a>
+                <div class="carousel-caption">
+                  <h5 class="m-0">Seguro Patrimonial Empresarial</h5>
+                  <p>Mantenha sua Empresa Segura</p>
+                </div>
+              </div>
+              <div class="carousel-item"> <img class="d-block w-100" src="http://supportseguros.com.br/wp-content/uploads/2017/04/bg_seguro_vida02.jpg">
+                <div class="carousel-caption">
+                  <h5 class="m-0">Seguro de Vida</h5>
+                  <p>Amparo para quem você ama.</p>
+                </div>
+              </div>
+              <div class="carousel-item active"> <img class="d-block w-100" src="http://supportseguros.com.br/wp-content/uploads/2017/02/bg_topo_auto_01-1.jpg">
+                <div class="carousel-caption">
+                  <h5 class="m-0">Seguro Auto</h5>
+                  <p>Dirija sem preocupações</p>
+                </div>
+              </div>
+            </div> <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"> <span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-6 p-3 text-center shadow-lg"> <img class="img-fluid d-block mx-auto" src="http://supportseguros.com.br/wp-content/uploads/2017/02/mulher-sorrindo-com-copo-de-cafe-272x182.jpg">
+          <h2 class="my-3"><b>Plano de Saúde Individual &nbsp;</b> </h2><a class="btn btn-danger" text-alig="center" href="#">Solicitar Cotação</a>
+        </div>
+        <div class="col-md-4 col-6 p-3 text-center shadow-lg"> <img class="img-fluid d-block mx-auto" src="http://supportseguros.com.br/wp-content/uploads/2017/03/bg_seguro_saude-272x182.jpg">
+          <h2 class="my-3"> <b>Plano de Saúde Individual </b> </h2><a class="btn btn-danger" text-alig="center" href="#">Solicitar Cotação</a>
+        </div>
+        <div class="col-md-4 col-6 p-3 text-center shadow-lg"> <img class="img-fluid d-block mx-auto" src="http://supportseguros.com.br/wp-content/uploads/2017/02/ba625c8a-34e2-4bdd-a159-82836491864e-272x182.jpg">
+          <h2 class="my-3"> <b>Plano de Saúde Individual </b> </h2><a class="btn btn-danger" text-alig="center" href="#">Solicitar Cotação</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-md-left text-center p-4 text-light bg-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="my-3 col-md-3 col-lg-3" style="">
+          <h3>SUPPORT CORRETORA DE SEGUROS </h3>
+          <p class="text-white">Rua Sete de Setembro, 1465&nbsp;<br>2° and. Cj. 22&nbsp;<br>Vila Galvão | CEP 07064-002&nbsp;<br>Guarulhos - SP</p>
+          <a class="btn btn-lg btn-danger" href="faleconosco.html">Fale Conosco</a>
+        </div>
+        <div class="my-3 col-md-3 col-lg-3" style="">
+          <h3>Contate-nos</h3>
+          <form action="https://formspree.io/xqkykddk" method="POST">
+            <fieldset class="form-group my-3">
+              <input type="email" class="form-control bg-dark" id="Input Email" placeholder="Email" name="Email"> </fieldset>
+            <fieldset class="form-group my-3">
+              <input type="text" class="form-control bg-dark" id="Input Message" name="Mensagem" placeholder="Mensagem"> </fieldset>
+            <button type="submit" class="btn btn-outline-danger active">Enviar</button>
+          </form>
+        </div>
+        <div class="my-3 col-lg-3" style="">
+          <h3>Entre em Contato Conosco!</h3>
+          <a href="https://www.facebook.com/consultoriacjl/" target="blank"><i class="fa fa-whatsapp fa-4x bg-dark text-danger mr-5" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/consultoriacjl/" target="blank"><i class="fa fa-volume-control-phone fa-4x bg-dark text-danger ml-5" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="my-3 col-lg-3" style="">
+          <h3>Redes Sociais</h3>
+          <a href="https://www.facebook.com/consultoriacjl/" target="blank"><i class="fa fa-facebook-square text-muted fa-3x m-2"></i></a>
+          <a href="https://www.instagram.com/consultoriacjl/" target="blank"><i class="fa fa-3x fa-instagram text-muted m-2"></i></a>
+          <a href="https://twitter.com/CjlConsultoria" target="blank"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
+          <a href="https://www.youtube.com/channel/UC3EqPxdpDWqK6Pq0k_u6q2Q" target="blank"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <p class="text-center text-white">© Copyright 2020 Consultoria CJL - All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Intro -->
+  <!-- Gallery -->
+  <!-- Menu -->
+  <!-- Carousel reviews -->
+  <!-- Carousel venue -->
+  <!-- Events -->
+  <!-- Book section -->
+  <!-- Footer -->
+  <!-- JavaScript dependencies -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow bg-dark" style="">
+    <div class="container"> <a class="navbar-brand" href="#">Support Seguros</a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2 text-white"> <a class="nav-link" href="#features">Inicio</a> </li>
+          <li class="nav-item mx-2 text-white"> <a class="nav-link" href="#reviews">Quem Somos</a> </li>
+          <li class="nav-item mx-2"> <a class="nav-link" href="#reviews">Solicitar Cotação</a> </li>
+        </ul> <a class="btn navbar-btn text-white mx-2 btn-danger" href="#download">Ligar Agora</a><a class="btn navbar-btn mx-2 btn-danger text-white" href="#download">Contatos</a>
+      </div>
+    </div>
+  </nav>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Script: Smooth scrolling between anchors in the same page -->
+  <script src="js/smooth-scroll.js"></script>
+<pingendo onclick="window.open('https://cjlconsultoria.com.br/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: black;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Criado por CJL Consultoria&nbsp;&nbsp;<img src="cjl.png" class="d-block" alt="Pingendo logo" height="16"></pingendo></body>
+
+</html>
